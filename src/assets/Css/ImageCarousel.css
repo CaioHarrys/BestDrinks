@@ -1,0 +1,16 @@
+.MuiPaper-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    text-align: center;
+  }
+  
+  .MuiPaper-root img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .Carousel{
+    background-color: blue !important;
+  }
