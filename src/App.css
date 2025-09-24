@@ -1,7 +1,16 @@
 #root {
+  display: flex;
   padding: 0;
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
+  gap: 0 !important;
+}
+
+h1,
+p,
+h2 {
+  margin: 0;
 }
 
 .logo {
@@ -43,8 +52,32 @@
   color: #888;
 }
 
-.section-1{
+.section-1 {
   width: 100%;
   margin-top: 60px;
-  /* background-color: whitesmoke; */
+  margin-bottom: 0px;
+  background-color: whitesmoke;
+}
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  background-color: white;
+}
+
+/* PAGINA */
+.page-fit {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.css-ohwg9z{
+  height: fit-content;
+  background-color: white;
+}
+.css-1f8sh1y{
+  height: fit-content ;
+  background-color: white;
 }
