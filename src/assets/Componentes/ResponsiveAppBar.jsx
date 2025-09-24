@@ -13,7 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-
+import "../Css/navbar.css";
 const pages = ["Gingibre", "Rubra", "Veneta", "Xeque-Mate"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -34,9 +34,10 @@ const StyledLogoTypographyDesktop = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
-  fontFamily: "monospace",
-  fontWeight: 700,
-  letterSpacing: ".3rem",
+  fontFamily: "Jost !important", // FONTE ALTERADA: Tipo de fonte
+  fontWeight: 600,
+  fontStyle: "normal !important",
+  fontOpticalSizing: "auto !important",
   color: "black", // COR ALTERADA: Cor do texto do logo
   textDecoration: "none",
 }));
@@ -129,6 +130,7 @@ function ResponsiveAppBar() {
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
+            className="jost-style"
           >
             Melhores Drinks
           </StyledLogoTypographyDesktop>
@@ -163,47 +165,28 @@ function ResponsiveAppBar() {
           </StyledMobileBox>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <StyledLogoTypographyMobile
-            variant="h5"
+            className="jost-style"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
           >
-            LOGO
+            Melhores Drinks
           </StyledLogoTypographyMobile>
 
           {/* Botões de navegação para desktop */}
           <StyledDesktopBox>
             {pages.map((page) => (
-              <StyledPageButton key={page} onClick={handleCloseNavMenu}>
+              <StyledPageButton
+                key={page}
+                className="jost-link"
+                onClick={handleCloseNavMenu}
+              >
                 {page}
               </StyledPageButton>
             ))}
           </StyledDesktopBox>
 
           {/* Menu do usuário com avatar */}
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{ vertical: "top", horizontal: "right" }}
-              keepMounted
-              transformOrigin={{ vertical: "top", horizontal: "right" }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
         </Toolbar>
       </Container>
     </AppBar>

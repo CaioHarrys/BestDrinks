@@ -1,3 +1,22 @@
-.css-10uj0rp{
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.css-10uj0rp {
     gap: 20px !important;
+}
+
+.jost-style {
+    font-family: "Jost" !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-size: 1.5em !important;
+    color: black !important;
+}
+
+.jost-link {
+    font-family: "Jost";
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 0.8em !important;
 }
