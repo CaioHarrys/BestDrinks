@@ -6,44 +6,6 @@
     margin-top: 20px;
 }
 
-/* OurProductSection.css */
-
-.card-hover-container {
-    /* Garante que o container seja o ponto de referência */
-    position: relative;
-    overflow: hidden;
-    /* Evita que o conteúdo transborde */
-}
-
-.image-wrapper {
-    position: relative;
-    /* Garante que as imagens fiquem sobrepostas */
-    height: fit-content;
-}
-
-.main-image,
-.hover-image {
-    position: absolute;
-    /* Posição absoluta para sobrepor */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-    /* A mágica da transição! */
-}
-
-.hover-image {
-    opacity: 0;
-    /* Por padrão, a imagem de hover está invisível */
-}
-
-.card-hover-container:hover .hover-image {
-    opacity: 1;
-    /* Ao passar o mouse, ela se torna visível */
-}
-
 @media (max-width: 768px) {
     .drink-row {
         flex-direction: column;

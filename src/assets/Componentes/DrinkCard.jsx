@@ -21,28 +21,24 @@ export default function ImgMediaCard() {
       image: gingibre1,
       cover: gingibre2,
       title: "Gingibre",
-      description: "Descrição da Imagem 1",
       valor: "R$ 12,40",
     },
     {
       image: rubra1,
-      cover: rubra2, // Pode usar a mesma imagem se não tiver uma segunda
+      cover: rubra2,
       title: "Rubra",
-      description: "Descrição da Imagem 1",
       valor: "R$ 12,40",
     },
     {
       image: veneta1,
       cover: veneta2,
       title: "Veneta",
-      description: "Descrição da Imagem 1",
       valor: "R$ 12,40",
     },
     {
       image: pacotebebidas2,
       cover: pacotebebidas,
       title: "Pack Bebidas",
-      description: "Descrição da Imagem 1",
       valor: "R$ 12,40",
     },
   ];
@@ -62,7 +58,6 @@ export default function ImgMediaCard() {
   );
 }
 
-// Novo componente para gerenciar o efeito hover
 function CardHoverEffect({ image, cover, title, valor }) {
   const [currentImage, setCurrentImage] = useState(image);
 
@@ -75,7 +70,7 @@ function CardHoverEffect({ image, cover, title, valor }) {
   };
 
   return (
-    <Card
+    <Card className="drink-card"
       sx={{ maxWidth: 345, margin: 2 }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -90,15 +85,10 @@ function CardHoverEffect({ image, cover, title, valor }) {
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+        <Typography variant="body2" className="price-tag" sx={{ color: "text.secondary" }}>
           {valor}
         </Typography>
       </CardContent>
-      <CardActions>
-        {/* Adicionei botões de volta aqui */}
-        <Button size="small">Compartilhar</Button>
-        <Button size="small">Saber Mais</Button>
-      </CardActions>
     </Card>
   );
 }
