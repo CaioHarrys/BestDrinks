@@ -5,6 +5,7 @@ import banner1 from '../../assets/Imagens/Banners/banner1.png';
 import banner_2 from '../../assets/Imagens/Banners/banner_2.png';
 import banner3 from '../../assets/Imagens/Banners/banner3.png';
 import banner4 from '../../assets/Imagens/Banners/banner4.png';
+import '../../assets/Css/ImageCarousel.css';
 
 function ImageCarousel() {
   const items = [
@@ -20,6 +21,7 @@ function ImageCarousel() {
       image: banner3,
       description: 'Descrição da Imagem 3',
     },
+    
     {
       image: banner4,
       description: 'Descrição da Imagem 4',
@@ -39,7 +41,7 @@ function ImageCarousel() {
 const Item = React.memo((props) => {
     return (
       <Paper
-        elevation={10}
+        elevation={0}
         sx={{
           position: 'relative',
           display: 'flex',
@@ -47,8 +49,8 @@ const Item = React.memo((props) => {
           alignItems: 'center',
           justifyContent: 'center',
           textAlign: 'center',
-          padding: '20px',
-          minHeight: '400px',
+          padding: '0px',
+          minHeight: 'fit-content',
         }}
       >
         <img
@@ -56,13 +58,12 @@ const Item = React.memo((props) => {
           alt={props.item.description}
           style={{
             width: '100%',
-            maxHeight: '300px',
+            maxHeight: 'fit-content',
             objectFit: 'contain',
-            marginBottom: '10px',
+            marginBottom: '0px !important',
+            paddingBottom: '0px !important',
           }}
         />
-        <h2>{props.item.description}</h2>
-        <Button variant="contained">Ver Detalhes</Button>
       </Paper>
     );
   });
