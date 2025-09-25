@@ -1,6 +1,7 @@
 import "./App.css";
 import ImageCarousel from "./assets/Componentes/ImageCarousel";
 import DrinkCard from "./assets/Componentes/DrinkCard";
+import CardInfo from "./assets/Componentes/CardInfo";
 import "./assets/Css/OurProductSection.css";
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <h1>Nossos Produtos</h1>
         </div>
         <DrinkCard />
+        <CardInfo />
       </div>
     </div>
   );
