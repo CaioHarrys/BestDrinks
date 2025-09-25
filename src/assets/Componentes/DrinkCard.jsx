@@ -1,10 +1,4 @@
-import React, { useState } from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import React, { useRef } from "react";
 import gingibre1 from "../Imagens/Bebidas/Gingibre/gingibre1.png";
 import rubra1 from "../Imagens/Bebidas/Rubra/rubra1.png";
 import veneta1 from "../Imagens/Bebidas/Veneta/veneta1.png";
@@ -15,7 +9,7 @@ import veneta2 from "../Imagens/Bebidas/Veneta/veneta2.png";
 import pacotebebidas from "../Imagens/Bebidas/Pacote/pacotebebidas.jpg";
 import "../Css/OurProductSection.css";
 
-export default function ImgMediaCard() {
+export default function CarouselCards() {
   const cardData = [
     {
       image: gingibre1,
@@ -23,16 +17,28 @@ export default function ImgMediaCard() {
       title: "Gingibre",
       valor: "R$ 12,40",
     },
+    { 
+      image: rubra1, 
+      cover: rubra2, 
+      title: "Rubra", 
+      valor: "R$ 12,40" 
+    },
+    { 
+      image: veneta1, 
+      cover: veneta2, 
+      title: "Veneta", 
+      valor: "R$ 12,40" 
+    },
     {
-      image: rubra1,
-      cover: rubra2,
-      title: "Rubra",
+      image: pacotebebidas2,
+      cover: pacotebebidas,
+      title: "Pack Bebidas",
       valor: "R$ 12,40",
     },
     {
-      image: veneta1,
-      cover: veneta2,
-      title: "Veneta",
+      image: pacotebebidas2,
+      cover: pacotebebidas,
+      title: "Pack Bebidas",
       valor: "R$ 12,40",
     },
     {
@@ -43,52 +49,58 @@ export default function ImgMediaCard() {
     },
   ];
 
+  const carouselRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (carouselRef.current) {
+      const scrollAmount = 270; // largura base de um card
+      carouselRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="drink-row">
-      {cardData.map((item, index) => (
-        <CardHoverEffect
-          key={index}
-          image={item.image}
-          cover={item.cover}
-          title={item.title}
-          valor={item.valor}
-        />
-      ))}
+    <div className="carousel-container">
+      {/* Botões aparecem só em telas grandes */}
+      <button className="nav-btn left" onClick={() => scroll("left")}>
+        ◀
+      </button>
+
+      <div className="carousel" ref={carouselRef}>
+        {cardData.map((item, index) => (
+          <CardHoverEffect
+            key={index}
+            image={item.image}
+            cover={item.cover}
+            title={item.title}
+            valor={item.valor}
+          />
+        ))}
+      </div>
+
+      <button className="nav-btn right" onClick={() => scroll("right")}>
+        ▶
+      </button>
     </div>
   );
 }
 
 function CardHoverEffect({ image, cover, title, valor }) {
-  const [currentImage, setCurrentImage] = useState(image);
-
-  const handleMouseEnter = () => {
-    setCurrentImage(cover);
-  };
-
-  const handleMouseLeave = () => {
-    setCurrentImage(image);
-  };
+  const [currentImage, setCurrentImage] = React.useState(image);
 
   return (
-    <Card className="drink-card"
-      sx={{ maxWidth: 345, margin: 2 }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+    <div
+      className="drink-card"
+      onMouseEnter={() => setCurrentImage(cover)}
+      onMouseLeave={() => setCurrentImage(image)}
     >
-      <CardMedia
-        component="img"
-        alt={title}
-        height="fit-content"
-        image={currentImage}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {title}
-        </Typography>
-        <Typography variant="body2" className="price-tag" sx={{ color: "text.secondary" }}>
-          {valor}
-        </Typography>
-      </CardContent>
-    </Card>
+      <img src={currentImage} alt={title} className="card-img" />
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p className="price">{valor}</p>
+      </div>
+    </div>
   );
 }
