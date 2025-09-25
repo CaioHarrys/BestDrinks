@@ -71,14 +71,7 @@ Contribuições são bem-vindas! Se você tiver sugestões, encontrou um bug ou 
 
 ---
 
-## 📜 Licença
-
-Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
-
----
 
 ## 📧 Contato
 
-Seu nome - [caiocompanyhc@gmail.com](mailto:caiocompanyhc@gmail.com)
-
-Link para o seu perfil do GitHub - [https://github.com/CaioHarrys](https://github.com/CaioHarrys)
+Caio Harrys - [caiocompanyhc@gmail.com](mailto:caiocompanyhc@gmail.com)
