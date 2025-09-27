@@ -17,7 +17,7 @@ export default function cardInfo() {
       image: LocalOfferOutlinedIcon,
       title: "Melhores Preços",
       description:
-        "Oferecemos os melhores preços do mercado para nossos clientes.",
+        "Oferecemos os melhores preços do mercado para nossos clientes fiéis.",
     },
     {
       // Card Pagamento
