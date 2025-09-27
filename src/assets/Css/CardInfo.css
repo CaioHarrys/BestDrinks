@@ -23,7 +23,8 @@
 /* Responsividade para tablets */
 @media (max-width: 768px) {
     .card-info-container {
-        gap: 2rem; /* Ajusta o espaçamento */
+        gap: 2rem;
+        /* Ajusta o espaçamento */
         font-size: 20px;
     }
 }
@@ -31,8 +32,10 @@
 /* Responsividade para mobile */
 @media (max-width: 580px) {
     .card-info-container {
-        flex-direction: column !important; /* Alinha os cards em coluna */
-        gap: 1rem; /* Ajusta o espaçamento */
+        flex-direction: column !important;
+        /* Alinha os cards em coluna */
+        gap: 1rem;
+        /* Ajusta o espaçamento */
         font-size: 18px;
     }
 }

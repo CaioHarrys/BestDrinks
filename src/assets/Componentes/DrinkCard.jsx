@@ -17,17 +17,17 @@ export default function CarouselCards() {
       title: "Gingibre",
       valor: "R$ 12,40",
     },
-    { 
-      image: rubra1, 
-      cover: rubra2, 
-      title: "Rubra", 
-      valor: "R$ 12,40" 
+    {
+      image: rubra1,
+      cover: rubra2,
+      title: "Rubra",
+      valor: "R$ 12,40",
     },
-    { 
-      image: veneta1, 
-      cover: veneta2, 
-      title: "Veneta", 
-      valor: "R$ 12,40" 
+    {
+      image: veneta1,
+      cover: veneta2,
+      title: "Veneta",
+      valor: "R$ 12,40",
     },
     {
       image: pacotebebidas2,

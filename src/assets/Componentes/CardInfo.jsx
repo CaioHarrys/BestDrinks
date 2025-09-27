@@ -49,7 +49,12 @@ export default function cardInfo() {
               <div className="icon-container">
                 <card.image sx={{ fontSize: 70, color: "black" }} />
               </div>
-              <Typography gutterBottom variant="h5" fontWeight={700} component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                fontWeight={700}
+                component="div"
+              >
                 {card.title}
               </Typography>
               <Typography variant="body4" color="text.secondary">
