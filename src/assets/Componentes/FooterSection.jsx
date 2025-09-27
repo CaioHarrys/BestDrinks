@@ -65,8 +65,8 @@ const FooterSection = () => {
         <div className="footer-column">
           <h4>ENTRE EM CONTATO</h4>
           <ul>
-            <li>553123915063</li>
-            <li>loja@aequilibrista.com.br</li>
+            <li>(061) 99211-9889</li>
+            <li>melhoresdrinks.com.br</li>
             <li>
               Rua Niágara, 968, Jardim Canadá – Nova Lima/MG – CEP 3400-652
             </li>
@@ -88,7 +88,7 @@ const FooterSection = () => {
       </div>
 
       <p className="footer-copyright">
-        Copyright Equilibrista - 35471933000141 - 2025. Todos os direitos
+        Copyright Mwlhores Drinks - 35471933000141 - 2025. Todos os direitos
         reservados.
       </p>
       <p className="footer-created">
@@ -96,7 +96,7 @@ const FooterSection = () => {
         <span role="img" aria-label="infinity">
           ∞
         </span>{" "}
-        nuvemshop
+        harryscompany
       </p>
     </footer>
   );
