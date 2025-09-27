@@ -4,7 +4,7 @@ import DrinkCard from "./assets/Componentes/DrinkCard";
 import CardInfo from "./assets/Componentes/CardInfo";
 import "./assets/Css/OurProductSection.css";
 import BannersSection from "./assets/Componentes/BannersSection";
-
+import FooterSection from "./assets/Componentes/FooterSection";
 function App() {
   return (
     <div className="page-fit">
@@ -16,6 +16,7 @@ function App() {
         <DrinkCard />
         <CardInfo />
         <BannersSection/>
+        <FooterSection/>
       </div>
     </div>
   );
