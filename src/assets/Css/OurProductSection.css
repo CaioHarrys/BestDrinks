@@ -52,7 +52,7 @@
 
 .drink-card {
   flex: 0 0 auto;
-  min-width: 220px;
+  min-width: 10px;
   width: 350px;
   background: #ffff;
   overflow: hidden;
@@ -122,8 +122,8 @@
   }
 
   .drink-card {
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 33%;
+    max-width: 33%;
   }
 }
 
