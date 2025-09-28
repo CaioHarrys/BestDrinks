@@ -42,12 +42,12 @@ export default function cardInfo() {
             key={index}
             elevation={0}
             sx={{
-              maxWidth: 320,
+              maxWidth: 300,
             }}
           >
             <CardContent className="card-box">
               <div className="icon-container">
-                <card.image sx={{ fontSize: 70, color: "black" }} />
+                <card.image sx={{ fontSize: 30, color: "black" }} />
               </div>
               <Typography
                 gutterBottom
@@ -57,7 +57,7 @@ export default function cardInfo() {
               >
                 {card.title}
               </Typography>
-              <Typography variant="body4" color="text.secondary">
+              <Typography variant="body3" color="text.secondary">
                 {card.description}
               </Typography>
             </CardContent>
