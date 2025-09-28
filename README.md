@@ -1,77 +1,90 @@
 # 🍷 Projeto de E-commerce - Equilibrista
+# BestDrinks - E-commerce de Bebidas
 
-Este é o projeto de desenvolvimento de um e-commerce clone do site **Equilibrista**, focado na venda de bebidas. O projeto foi construído utilizando **React (JavaScript)** e será hospedado na **Netlify**.
+Bem-vindo ao repositório do **BestDrinks**, um projeto de e-commerce inspirado no site **Equilibrista**, focado na venda de bebidas. Este projeto foi desenvolvido utilizando **React (JavaScript)** e está configurado para ser hospedado na **Netlify**.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
-* **React:** Biblioteca JavaScript para a construção da interface do usuário.
-* **JavaScript:** Linguagem de programação principal.
-* **HTML5 & CSS3:** Linguagens de marcação e estilo.
-* **Netlify:** Plataforma de hospedagem para o deploy do projeto.
+
+As principais tecnologias e ferramentas utilizadas no desenvolvimento deste projeto incluem:
+
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript:** Linguagem de programação principal.
+- **Material UI:** Para estruturação e estilização do projeto.
+- **Netlify:** Plataforma de hospedagem para deploy contínuo.
 
 ---
 
-## 🎯 Funcionalidades Principais
-* **Listagem de Produtos:** Exibição dos produtos disponíveis com informações como nome, preço e imagem.
-* **Página do Produto:** Visualização detalhada de cada item.
-* **Carrinho de Compras:** Funcionalidade para adicionar, remover e gerenciar os produtos selecionados.
-* **Checkout Simplificado:** Processo de compra otimizado para uma melhor experiência do usuário.
-* **Responsividade:** Design adaptável para desktop, tablet e mobile.
+## 🎯 Funcionalidades
+
+O **BestDrinks** oferece as seguintes funcionalidades:
+
+- **Listagem de Produtos:** Exibição de produtos com informações detalhadas (nome, preço e imagem).
+- **Página do Produto (Loading...):** Visualização detalhada de cada item.
+- **Carrinho de Compras (Loading...):** Adição, remoção e gerenciamento de produtos selecionados.
+- **Checkout Simplificado (Loading...):** Processo de compra otimizado para melhor experiência do usuário.
+- **Responsividade:** Design adaptável para dispositivos desktop, tablet e mobile.
 
 ---
 
-## 💻 Como Instalar e Rodar o Projeto
+## 💻 Instalação e Execução
 
-Para começar, certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
+Siga os passos abaixo para instalar e executar o projeto localmente:
 
-1.  **Clone o repositório:**
+1. **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+    git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
     ```
 
-2.  **Entre no diretório do projeto:**
+2. **Acesse o diretório do projeto:**
     ```bash
     cd nome-do-seu-projeto
     ```
 
-3.  **Instale as dependências:**
+3. **Instale as dependências:**
     ```bash
     npm install
     # ou
     yarn install
     ```
 
-4.  **Execute o projeto em modo de desenvolvimento:**
+4. **Inicie o servidor de desenvolvimento:**
     ```bash
     npm start
     # ou
     yarn start
     ```
 
-O projeto será executado em `http://localhost:3000` - por exemplo.
+O projeto estará disponível em `http://localhost:3000`.
 
 ---
 
-## 🌎 Deploy com Netlify
+## 🌎 Deploy na Netlify
 
-Para fazer o deploy do projeto, você pode usar a Netlify, uma plataforma que automatiza o processo diretamente do seu repositório Git.
+Para realizar o deploy do projeto na Netlify, siga os passos abaixo:
 
-1.  Crie uma conta na Netlify e conecte-a ao seu repositório GitHub.
-2.  Configure o deploy com as seguintes opções:
-    * **Build command:** `npm run build`
-    * **Publish directory:** `build`
-3.  A Netlify irá compilar e publicar o seu site automaticamente a cada novo `push` para o seu repositório.
+1. Crie uma conta na [Netlify](https://www.netlify.com/) e conecte-a ao seu repositório GitHub.
+2. Configure o deploy com as seguintes opções:
+    - **Build command:** `npm run build`
+    - **Publish directory:** `build`
+3. A cada novo `push` no repositório, a Netlify realizará o deploy automaticamente.
 
 ---
 
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Se você tiver sugestões, encontrou um bug ou quer adicionar uma nova funcionalidade, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+Contribuições são sempre bem-vindas! Caso tenha sugestões, encontre algum problema ou queira adicionar novas funcionalidades, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
 
 ---
 
-
 ## 📧 Contato
 
-Caio Harrys - [caiocompanyhc@gmail.com](mailto:caiocompanyhc@gmail.com)
+Para dúvidas ou mais informações, entre em contato:
+
+**Caio Harrys**  
+📧 [caiocompanyhc@gmail.com](mailto:caiocompanyhc@gmail.com)
+
+---
+
+**Nota:** Este projeto é apenas para fins educacionais e não possui afiliação com o site **Equilibrista**.
