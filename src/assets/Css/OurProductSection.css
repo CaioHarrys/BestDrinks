@@ -1,5 +1,4 @@
 .drink-row {
-  /* Esta classe deve ser usada apenas para centralizar e adicionar margem externa. */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +7,9 @@
 }
 
 @media (max-width: 768px) {
-  /* Não adicione flex-direction: column aqui, pois isso empilha os cards. */
   .drink-row {
     gap: 15px;
     margin-top: 15px;
-    /* REMOVEMOS flex-direction: column AQUI! */
   }
 }
 
@@ -20,47 +17,37 @@
   .drink-row {
     gap: 10px;
     margin-top: 10px;
-    /* REMOVEMOS width: 30% !important; que estava espremendo o contêiner. */
   }
 }
 
-/* --- CARROSSEL --- */
 .carousel-container {
   position: relative;
   width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
-  /* Mantenha overflow-x: hidden no container externo,
-     mas o rolamento deve estar no .carousel. */
   overflow-x: hidden; 
 }
 
 .carousel {
   display: flex;
-  /* Isso permite que os cards fiquem lado a lado */
   flex-wrap: nowrap;
-  
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  /* Firefox */
   -webkit-overflow-scrolling: touch;
-  /* Mobile scroll suave */
   gap: 30px;
   width: 100%;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
-  /* Chrome/Safari */
 }
 
 .drink-card {
-  /* Esta é a regra padrão para desktop/telas grandes */
   flex: 0 0 auto;
   min-width: 10px;
-  width: 350px; /* Largura grande padrão para desktop */
+  width: 350px;
   background: #ffff;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -74,10 +61,7 @@
 
 .card-img {
   width: 100%;
-  /* CORREÇÃO: Garante que a imagem mantenha sua proporção e não estique. */
   height: auto; 
-  /* 'cover' é bom para preencher a área; se a imagem estiver cortando, 
-     use 'contain' para mostrar a lata inteira. */
   object-fit: cover; 
 }
 
@@ -91,7 +75,6 @@
   font-weight: bold;
 }
 
-/* Botões de navegação */
 .nav-btn {
   background: #d4d2d26a;
   border: none;
@@ -118,10 +101,8 @@
   right: 0px;
 }
 
-/* --- RESPONSIVIDADE --- */
 @media (max-width: 1024px) {
   .drink-card {
-    /* Ajuste para telas de tablet */
     min-width: 300px;
   }
 }
@@ -129,27 +110,22 @@
 @media (max-width: 768px) {
   .nav-btn {
     display: none;
-    /* esconde setas no mobile */
   }
 
   .drink-card {
-    /* CORREÇÃO: Define a largura para que caibam 2 itens + gap na tela. */
     width: 45%; 
     min-width: 45%;
-    max-width: none; /* Remove a restrição de 33% */
+    max-width: none;
     flex-shrink: 0;
   }
   
   .carousel {
-    /* Se o gap de 30px for muito grande e estiver quebrando a linha, ajuste aqui */
     gap: 15px; 
   }
 }
 
 @media (max-width: 480px) {
   .drink-card {
-    /* CORREÇÃO: Mantém 45% para 2 itens. Se quiser que 1 item + prévia apareça, 
-       use min-width: 85vw. */
     width: 45%; 
     min-width: 45%;
     max-width: none;
