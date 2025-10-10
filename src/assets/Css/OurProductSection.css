@@ -129,9 +129,7 @@
 
 @media (max-width: 480px) {
   .drink-card {
-    min-width: 15vw !important;
-    max-width: 33vw !important;
-    height: auto !important;
+    min-width: 40vw; /* Ocupa 40% da tela. Mostra 2 cards e uma prévia. */
     flex-shrink: 0; 
   }
 }
