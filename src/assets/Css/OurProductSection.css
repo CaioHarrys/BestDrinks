@@ -131,5 +131,6 @@
   .drink-card {
     min-width: 15% !important;
     max-width: 33% !important;
+    height: auto !important;
   }
 }
