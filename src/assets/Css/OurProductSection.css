@@ -129,8 +129,9 @@
 
 @media (max-width: 480px) {
   .drink-card {
-    min-width: 15% !important;
-    max-width: 33% !important;
+    min-width: 15vw !important;
+    max-width: 33vw !important;
     height: auto !important;
+    flex-shrink: 0; 
   }
 }
