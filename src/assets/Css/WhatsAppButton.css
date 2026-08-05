@@ -1,0 +1,43 @@
+.whatsapp-float,
+.whatsapp-float:visited,
+.whatsapp-float:active,
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366 !important;
+  color: #ffffff !important;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+  background-color: #1ebc57 !important;
+  color: #ffffff !important;
+  transform: scale(1.1);
+}
+
+/* Garante que o ícone retanha a cor branca em qualquer estado */
+.whatsapp-float svg,
+.whatsapp-float:hover svg,
+.whatsapp-float:visited svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.whatsapp-icon {
+  width: 35px;
+  height: 35px;
+}

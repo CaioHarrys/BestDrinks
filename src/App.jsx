@@ -5,6 +5,7 @@ import CardInfo from "./assets/Componentes/CardInfo";
 import "./assets/Css/OurProductSection.css";
 import BannersSection from "./assets/Componentes/BannersSection";
 import FooterSection from "./assets/Componentes/FooterSection";
+import WhatsAppButton from "./assets/Componentes/WhatsAppButton";
 function App() {
   return (
     <div className="page-fit">
@@ -17,6 +18,7 @@ function App() {
         <CardInfo />
         <BannersSection/>
         <FooterSection/>
+        <WhatsAppButton/>
       </div>
     </div>
   );
