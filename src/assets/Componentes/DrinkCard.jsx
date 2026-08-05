@@ -6,11 +6,44 @@ import pacotebebidas2 from "../Imagens/Bebidas/Pacote/pacotebebidas2.jpg";
 import gingibre2 from "../Imagens/Bebidas/Gingibre/gingibre2.png";
 import rubra2 from "../Imagens/Bebidas/Rubra/rubra2.png";
 import veneta2 from "../Imagens/Bebidas/Veneta/veneta2.png";
+import mascate from "../Imagens/Bebidas/Mascate/Maracuja/maracuja1.png";
+import mascate2 from "../Imagens/Bebidas/Mascate/Maracuja/maracuja2.png";
+import melancia from "../Imagens/Bebidas/Mascate/Melancia/melancia1.png";
+import melancia2 from "../Imagens/Bebidas/Mascate/Melancia/melancia2.png";
+import xeque from "../Imagens/Bebidas/Xeque/mate1.png";
+import xeque2 from "../Imagens/Bebidas/Xeque/mate2.png";
+import chablau from "../Imagens/Bebidas/Chablauzin/chablauzin1.png";
+import chablau2 from "../Imagens/Bebidas/Chablauzin/chablauzin2.png";
 import pacotebebidas from "../Imagens/Bebidas/Pacote/pacotebebidas.jpg";
 import "../Css/OurProductSection.css";
 
 export default function CarouselCards() {
   const cardData = [
+    {
+      image: xeque,
+      cover: xeque2,
+      title: "Xeque Mate",
+      valor: "Sucesso nacional o Xeque-Mate com a mistura de : Guaraná, Mate, limão e rum.",
+    },
+    {
+      image: mascate,
+      cover: mascate2,
+      title: "Mascate Maracujá",
+      valor: "Novidade da Xeque-Mate, Mascate Drinks de Maracuja: com maracujá , caju, água de coco e rum.",
+    },
+    {
+      image: melancia,
+      cover: melancia2,
+      title: "Mascate Melancia",
+      valor:
+        "Novidade Xeque-Mate, Mascate Drinks de Melancia com: melancia, framboesa, hibisco , limão siciliano e rum.",
+    },
+    {
+      image: chablau,
+      cover: chablau2,
+      title: "Chablauzin",
+      valor: "Lançamento de A Equilibrista, Chablauzin com : Guaraná, limão siciliano, chapéu de couro e vodka.",
+    },
     {
       image: gingibre1,
       cover: gingibre2,
@@ -27,18 +60,6 @@ export default function CarouselCards() {
       image: veneta1,
       cover: veneta2,
       title: "Veneta",
-      valor: "R$ 12,40",
-    },
-    {
-      image: pacotebebidas2,
-      cover: pacotebebidas,
-      title: "Pack Bebidas",
-      valor: "R$ 12,40",
-    },
-    {
-      image: pacotebebidas2,
-      cover: pacotebebidas,
-      title: "Pack Bebidas",
       valor: "R$ 12,40",
     },
     {
