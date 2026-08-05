@@ -48,26 +48,26 @@ export default function CarouselCards() {
       image: gingibre1,
       cover: gingibre2,
       title: "Gingibre",
-      valor: "R$ 12,40",
+      valor: "Gingibre é refrescante, autêntica e com a picância única que só o gengibre natural tem.",
     },
     {
       image: rubra1,
       cover: rubra2,
       title: "Rubra",
-      valor: "R$ 12,40",
+      valor: "Soft Bitter: Rubra equilibra o doce e o amargo em um sabor interessante, adulto e de alto drinkability.",
     },
     {
       image: veneta1,
       cover: veneta2,
       title: "Veneta",
-      valor: "R$ 12,40",
+      valor: "Veneta traz o equilíbrio perfeito entre frutas vermelhas e hortelã: doce e refrescante no ponto certo.",
     },
-    {
-      image: pacotebebidas2,
-      cover: pacotebebidas,
-      title: "Pack Bebidas",
-      valor: "R$ 12,40",
-    },
+    // {
+    //   image: pacotebebidas2,
+    //   cover: pacotebebidas,
+    //   title: "Pack Bebidas",
+    //   valor: "R$ 12,40",
+    // },
   ];
 
   const carouselRef = useRef(null);

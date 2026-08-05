@@ -25,13 +25,13 @@ export default function cardInfo() {
       title: "Meios de Pagamento",
       description: "Temos diversas formas de pagamento para sua comodidade.",
     },
-    {
-      // Card Cupom
-      image: LocalShippingOutlinedIcon,
-      title: "Cupom de Desconto",
-      description:
-        "Oferecemos cupons de desconto exclusivos para nossos clientes fiéis.",
-    },
+    // {
+    //   // Card Cupom
+    //   image: LocalShippingOutlinedIcon,
+    //   title: "Cupom de Desconto",
+    //   description:
+    //     "Oferecemos cupons de desconto exclusivos para nossos clientes fiéis.",
+    // },
   ];
 
   return (
