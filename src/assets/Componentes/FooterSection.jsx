@@ -44,7 +44,7 @@ const FooterSection = () => {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <div className="footer-column">
+        {/* <div className="footer-column">
           <h4>ACESSE</h4>
           <ul>
             <li>Quem Somos</li>
@@ -53,7 +53,7 @@ const FooterSection = () => {
             <li>Pontos de Venda</li>
             <li>Contato</li>
           </ul>
-        </div>
+        </div> */}
         <div className="footer-column">
           <h4>PRODUTOS</h4>
           <ul>
@@ -91,11 +91,11 @@ const FooterSection = () => {
         reservados.
       </p>
       <p className="footer-created">
-        criado com{" "}
+        criado por{" "}
         <span role="img" aria-label="infinity">
           ∞
         </span>{" "}
-        harryscompany
+        HC Company
       </p>
     </footer>
   );
