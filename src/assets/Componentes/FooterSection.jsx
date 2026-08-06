@@ -65,11 +65,10 @@ const FooterSection = () => {
         <div className="footer-column">
           <h4>ENTRE EM CONTATO</h4>
           <ul>
-            <li>(061) 99211-9889</li>
-            <li>melhoresdrinks.com.br</li>
-            <li>
+            <li>(061) 99171-2642</li>
+            {/* <li>
               Rua Niágara, 968, Jardim Canadá – Nova Lima/MG – CEP 3400-652
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
