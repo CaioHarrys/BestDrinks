@@ -15,7 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../Imagens/logo/iconlogo.png";
 import "../Css/navbar.css";
 
-const pages = ["Gingibre", "Rubra", "Veneta", "Xeque-Mate"];
+const pages = ["Xeque-Mate", "Mascate","Chablauzin","Gingibre", "Rubra", "Veneta",];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 // Estilo para a imagem do logo (Desktop)
