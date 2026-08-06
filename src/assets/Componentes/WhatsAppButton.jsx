@@ -4,7 +4,7 @@ import "../Css/WhatsAppButton.css";
 const WhatsAppButton = () => {
   // Substiua pelo número da sua loja (Código do país + DDD + Número sem espaços/traços)
   const phoneNumber = '5561991712642';
-  const defaultMessage = encodeURIComponent('Olá! Vim pelo site BestDrinks e gostaria de mais informações.');
+  const defaultMessage = encodeURIComponent('Olá quero mais informações sobre o serviço de entrega dos Melhores Drinks BSB.');
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
 
