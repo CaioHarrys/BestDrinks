@@ -57,6 +57,9 @@ const FooterSection = () => {
         <div className="footer-column">
           <h4>PRODUTOS</h4>
           <ul>
+            <li>XEQUE-MATE</li>
+            <li>MASCATE</li>
+            <li>CHABLAUZIN</li>
             <li>GINGIBRE</li>
             <li>RUBRA</li>
             <li>VENETA</li>
